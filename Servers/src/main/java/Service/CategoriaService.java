@@ -1,5 +1,7 @@
 package Service;
 
+import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
 
 import domain.Categoria;
@@ -31,5 +33,14 @@ public class CategoriaService {
 		find(obj.getId());
 		return repo.save(obj);
 	}
-	
+
+	public void delete(Integer id) {
+		find(id);
+		repo.delete(id);
+	}
+
+	public List<Categoria> findAll() {
+		return repo.findAll();
+	}
+
 }

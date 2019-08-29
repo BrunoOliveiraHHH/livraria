@@ -10,4 +10,6 @@ public interface CategoriaRepository extends JpaRepository<Categoria,Integer> {
 
 	Categoria findOne(Integer id);
 
+	void delete(Integer id);
+
 }
