@@ -3,6 +3,11 @@ package Service;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.PageRequest;
+import org.springframework.data.domain.Sort.Direction;
+
+import com.matheus.cursomc.dto.CategoriaDTO;
 
 import domain.Categoria;
 import exceptions.ObejctNotFoundException;
@@ -41,6 +46,15 @@ public class CategoriaService {
 
 	public List<Categoria> findAll() {
 		return repo.findAll();
+	}
+
+	public Page<Categoria> findPage(Integer page, Integer linesPerPage, String ordeyBy, String direction) {
+		PageRequest pageRequest = new PageRequest(page, linesPerPage, Direction.valueOf(direction), ordeyBy);
+		return repo.findAll(pageRequest);
+	}
+
+	public Categoria fromDTO(CategoriaDTO objDto) {
+		return new Categoria(objDto.getId(), objDto.getNome()); 
 	}
 
 }
