@@ -11,5 +11,9 @@ public interface ClienteRepository extends JpaRepository<Categoria,Integer> {
 
 	Cliente findOne(Integer id);
 
+	Cliente save(Cliente obj);
+
+	void delete(Integer id);
+
 
 }
