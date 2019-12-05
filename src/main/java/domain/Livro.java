@@ -7,6 +7,8 @@ public class Livro {
 	private String autor;
 	private String isbn;
 	private String genero;
+	private Usuario usuario;
+	private Reserva reserva;
 
 	public Livro() {
 
