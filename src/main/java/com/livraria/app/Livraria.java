@@ -1,13 +1,13 @@
-package com.matheus.cursomc;
+package com.livraria.app;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class Cursomc1Application {
+public class Livraria {
 
 	public static void main(String[] args) {
-		SpringApplication.run(Cursomc1Application.class, args);
+		SpringApplication.run(Livraria.class, args);
 	}
 
 }
