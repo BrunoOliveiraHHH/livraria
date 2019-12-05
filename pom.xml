@@ -9,11 +9,11 @@
 		<version>2.1.7.RELEASE</version>
 		<relativePath /> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>com.matheus.cursomc</groupId>
-	<artifactId>cursomc2</artifactId>
+	<groupId>com.livraria</groupId>
+	<artifactId>livraria</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>cursomc-1</name>
-	<description>api rest2</description>
+	<name>livraria</name>
+	<description>api livraria</description>
 
 	<properties>
 		<maven-jar-plugin.version>3.1.1</maven-jar-plugin.version>
