@@ -2,7 +2,6 @@ package repositorio;
 
 import java.util.List;
 
-import domain.Livro;
 import domain.Reserva;
 
 public interface ReservaRepository {
